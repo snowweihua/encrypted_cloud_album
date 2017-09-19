@@ -1,5 +1,5 @@
-# tencent_album
-a private album based on tencent qcloud_cos and leancloud
+#  encrypted_cloud_album
+a private album based on tencent/baidu qcloud_cos and leancloud
 
 This is a mini program to satisfy with my personal requirement: how to store my photoes on cloud without security warning and also provide fast searching.Then I use tencent qcound_cos (cloud object storage) for photo files storage, leancloud for photo information database, and GnuPG for photo files encryption.
 
@@ -18,7 +18,7 @@ How To Use
 3.Install qcloud_cos, leancloud, gnupg, exifread in python
 
 4.Command
-usage: cloud_album.py [-h] [-dc] [-du] [-fc] [-fu] photofiles [photofiles ...]
+usage: cloud_album.py [-h] [-dc] [-du] [-fc] [-fu] [-bd] photofiles [photofiles ...]
 
 positional arguments:
 
@@ -36,4 +36,7 @@ optional arguments:
   -fc, --fcheck   file storage check only
   
   -fu, --fupload  file storage check and upload
+  
+  -bd, --baiduyun baidu yun storage
+  
   
